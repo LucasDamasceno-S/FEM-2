@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.card-bg{
+    margin: 40px 0;
+    padding: 30px 70px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    width: 80vw;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
+}
+.card{
+    margin: 0 auto;
+    max-width: 450px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
+}
+.card img{
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+}
+.card button{
+    display: block;
+    margin: 0 auto;
+    padding: 18px 100px;
+    background-color: hsl(245, 75%, 52%);
+    border:none;
+    border-radius:10px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 0 10px hsl(245, 75%, 52%);
+    margin-bottom: 15px;
+}
+.card button:hover{
+    background-color: hsla(245, 75%, 52%, 0.849);
+}
+@media (max-width:400px){
+    .card button{
+        padding: 18px 50px;
+    }
+}
+.card p{
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+.card strong{
+    color: hsl(223, 47%, 23%);
+}
+.card-summary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.card-summary h1{
+    margin: 0 0 8px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    text-align: center;
+}
+.card-summary p{
+    max-width: 300px;
+    color: hsl(224, 23%, 55%);
+}
+.card-plan{
+    display: flex;
+    line-height: 1.5em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.card-plan img{
+    margin-right: 20px;
+}
+.card-plan-change{
+    margin-left: 70px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.card-plan-change a:visited{
+    color: hsl(245, 75%, 52%);
+}
+.card-plan-change a:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+@media(max-width:400px){
+    .card-plan-change{
+        margin-left: 30px;
+    }
+}
+.cancel{
+    padding: 0 0 30px;
+    text-align: center;
+}
+.cancel a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+.cancel a:hover{
+    color: hsl(223, 47%, 23%);
+    text-shadow: 0 0 3px hsla(223, 47%, 23%, 0.322);
+}
